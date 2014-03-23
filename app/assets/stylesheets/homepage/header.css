@@ -1,7 +1,17 @@
-
+.top-bar {
+  background-color: #2a2d4e;
+  height: 8%;
+  width: auto;
+}
 .top-bar .name h1 a {
 	color: #fed28e;
 }
-.top-bar{
-	background-color: #2a243f
+#headerTitle {
+  width: 150px;
+  height: auto;
+}
+.top-bar .title-area {
+ float: right;
+ padding-top: 1%;
+ padding-right: 2%;
 }
