@@ -2,10 +2,7 @@ body {
   background-color: #f1f1f1;
 }
 .project-header {
-  padding: 0 0 30px 0;
-  margin-bottom: 30px;
   border-width: 100%;
-  border-bottom: 1px solid #2B2540;
 }
 .project-info {
   padding-left: 40px;
@@ -13,7 +10,7 @@ body {
 .button.purple{
   padding: 15px;
   border-radius: 20px;
-  color: #fff;
+  color: #FFD28E;
   background-color: #2B2540;
 }
 .progress.purple .meter {
@@ -33,7 +30,7 @@ body {
 }
 .tabs dd.active a {
   background-color: #2B2540;
-  color: #fff;
+  color: #FFD28E;
 }
 .panel {
   overflow: hidden;

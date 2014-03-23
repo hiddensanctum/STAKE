@@ -18,3 +18,14 @@
     </div>
   </li>
 </ul>
+<div class="row">
+  <ul class="large-block-grid-3">
+    <% @projects.each do |project| %>
+      <li class="text-center">
+        <%= link_to image_tag(project.image_url(:thumb).to_s, class: "img-circle"), project_path(project)  %>
+        <h3><%= project.title %></h3>
+        <p><%= truncate_html(project.description, length: 200, omission: '...') %></p>
+      </li>
+    <% end %>
+  </ul>
+</div>

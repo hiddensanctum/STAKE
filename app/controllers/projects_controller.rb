@@ -1,6 +1,7 @@
 class ProjectsController < ApplicationController
 
 	def index
+		@projects = Project.all
 	end
 
 	def create
@@ -49,7 +50,7 @@ class ProjectsController < ApplicationController
 	private
 
 	def project_params
-	      params.require(:project).permit(:title, :description, :total_fund_ask, :founders, :equity_offered)
+	      params.require(:project).permit(:title, :description, :total_fund_ask, :founders, :equity_offered, :image)
 	end
 
 end

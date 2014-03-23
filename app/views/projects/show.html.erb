@@ -2,7 +2,7 @@
 <div class="row">
   <h1 class="project-header"><%= @project.title %><small> by <%= @project.founders %></small></h1>
   <div class="large-6 columns">
-    <img src="http://placehold.it/500x500" class="img-circle">
+    <%= image_tag(@project.image_url.to_s, class: "img-circle") %>
   </div>
   <div class="large-6 columns project-info">
     <h2>125</h2>
@@ -21,7 +21,7 @@
 </div>
 <div class="row">
   <dl class="tabs" data-tab>
-    <dd class="active"><a href="#panel2-1">What We Do BITCH</a></dd>
+    <dd class="active"><a href="#panel2-1">What We Do</a></dd>
     <dd><a href="#panel2-2">Forum</a></dd>
   </dl>
   <div class="tabs-content">
@@ -30,22 +30,22 @@
     </div>
     <div class="content" id="panel2-2">
       <div class="panel">
-        <img src="http://placehold.it/100x100" class="img-circle right inline">
+        <img src="http://placehold.it/100x100" class="img-circle right">
         <h4>Derik:</h4>
         <p>Don't have it</p>
       </div>
       <div class="panel">
-        <img src="http://placehold.it/100x100" class="img-circle right inline">
+        <img src="http://placehold.it/100x100" class="img-circle right">
         <h4>Jason:</h4>
         <p>WHERE IS MY MONEY</p>
       </div>
       <div class="panel">
-        <img src="http://placehold.it/100x100" class="img-circle right inline">
+        <img src="http://placehold.it/100x100" class="img-circle right">
         <h4>Derik:</h4>
         <p>Don't have it</p>
       </div>
       <div class="panel">
-        <img src="http://placehold.it/100x100" class="img-circle right inline">
+        <img src="http://placehold.it/100x100" class="img-circle right">
         <h4>Jason:</h4>
         <p>I KNOW YOU HAVE MY MONEY</p>
       </div>
