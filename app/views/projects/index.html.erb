@@ -1,31 +1,63 @@
-<ul id="carousel"  class="example-orbit" data-orbit>
+<ul id="carousel" class="index-carousel" data-orbit>
   <li>
-    <%= image_tag('investors.jpg') %>
-    <div class="orbit-caption">
-      Caption One.
+    <div class="first-carousel"></div>
+    <div class="tint"></div>
+    <div class="carousel-header">
+      <div class="large-4 large-centered columns">
+        <h1>Who we are</h1>
+        <h1>We connect investors with early stage startups</h1>
+        <%= link_to 'Learn More', '#', class: "button learn-button"%>
+      </div>
     </div>
   </li>
   <li>
-    <%= image_tag('investors.jpg') %>
-    <div class="orbit-caption">
-      Caption Two.
+    <div class="second-carousel"></div>
+    <div class="tint"></div>
+    <div class="carousel-header">
+      <div class="large-4 large-centered columns">
+        <h1>Investors</h1>
+        <h1>Support innovation</h1>
+        <%= link_to 'Invest', '#', class: "button learn-button"%>
+      </div>
     </div>
   </li>
   <li>
-    <%= image_tag('investors.jpg') %>
-    <div class="orbit-caption">
-      Caption Three.
+    <div class="third-carousel"></div>
+    <div class="tint"></div>
+    <div class="carousel-header">
+      <div class="large-4 large-centered columns">
+        <h1>Startups</h1>
+        <h1>Fund your dream</h1>
+        <%= link_to 'Apply', '#', class: "button learn-button"%>
+      </div>
     </div>
   </li>
 </ul>
-<div class="row">
+<img src="assets/logo-small.png" class="logo">
+<div class="nav">
+  <ul class="inline-list">
+    <li><%= link_to 'About', '#', class: "button nav-button"%></li>
+    <li><%= link_to 'Investor', '#', class: "button nav-button"%></li>
+    <li><%= link_to 'Startup', '#', class: "button nav-button"%></li>
+    <li><%= link_to 'Login', '#', class: "button nav-button"%></li>
+    <li><%= link_to 'Sign Up', '#', class: "button nav-button active"%></li>
+  </ul>
+</div>
+<div class="row padding">
+  <div class="text-center">
+    <h1>Meet Our Startups</h1>
+  </div>
   <ul class="large-block-grid-3">
     <% @projects.each do |project| %>
       <li class="text-center">
-        <%= link_to image_tag(project.image_url(:thumb).to_s, class: "img-circle"), project_path(project)  %>
-        <h3><%= project.title %></h3>
-        <p><%= truncate_html(project.description, length: 200, omission: '...') %></p>
+        <%= link_to image_tag(project.image_url(:thumb).to_s, class: "img-circle padding-side"), project_path(project)  %>
+        <div class="startup-info">
+          <h2><%= project.title %></h2>
+          <h3><small><%= project.founders %></small></h3>
+          <p><%= truncate_html(project.description, length: 200, omission: '...') %></p>
+        </div>
       </li>
     <% end %>
   </ul>
 </div>
+<footer></footer>

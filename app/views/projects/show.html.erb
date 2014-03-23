@@ -1,3 +1,41 @@
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li id="headerTitle" class="name">
+      <h1>
+        <%= image_tag("logo-small.png", alt: "StakeFunding") %>
+      </h1>
+    </li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active">
+        <a href="#">Sign In</a>
+      </li>
+      <!-- <li class="has-dropdown">
+        <a href="#">Right Button Dropdown</a>
+        <ul class="dropdown">
+          <li>
+            <a href="#">First link in dropdown</a>
+          </li>
+        </ul>
+      </li>-->
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li class="name">
+        <a href="#">Menu</a>
+      </li>
+      <li class="name">
+        <a href="#">Extra</a>
+      </li>
+    </ul>
+  </section>
+</nav>
+
+
 <p id="notice"><%= notice %></p>
 <div class="row">
   <h1 class="project-header"><%= @project.title %><small> by <%= @project.founders %></small></h1>
