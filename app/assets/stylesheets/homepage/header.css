@@ -1,6 +1,6 @@
 .top-bar {
   background-color: #2a2d4e;
-  height: 8%;
+  height: 80px;
   width: auto;
 }
 .top-bar .name h1 a {
@@ -11,22 +11,26 @@
   height: auto;
 }
 .top-bar .title-area {
- float: left;
- padding-top: 1%;
- padding-bottom: 1%;
- padding-left: 10%;
- padding-right: 50%;
+  float: left;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+}
+.top-bar-section {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 10%;
 }
 .top-bar-section ul li > a.button {
   background: transparent;
+  color: #FFD28E;
 }
 .top-bar-section ul {
   background: transparent;
-  padding-top: 1%;
-  padding-bottom: 1%;
 }
-.button-group li .button {
-  color: bfb38b;
-  border-left: none;
+.nav.show-page {
+  margin-top: 0;
 }
-
+.inline-list.show-page{
+  height: 100px;
+}
