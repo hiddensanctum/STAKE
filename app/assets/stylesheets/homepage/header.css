@@ -11,7 +11,22 @@
   height: auto;
 }
 .top-bar .title-area {
- float: right;
+ float: left;
  padding-top: 1%;
- padding-right: 2%;
+ padding-bottom: 1%;
+ padding-left: 10%;
+ padding-right: 50%;
 }
+.top-bar-section ul li > a.button {
+  background: transparent;
+}
+.top-bar-section ul {
+  background: transparent;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.button-group li .button {
+  color: bfb38b;
+  border-left: none;
+}
+
