@@ -1,9 +1,14 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
-
 gem 'rails', '4.0.0'
 gem 'json', '~> 1.7.7'
+gem 'foundation-rails'
+gem 'truncate_html'
+gem 'carrierwave'
+gem 'rmagick'
+gem 'figaro'
+gem 'fog'
+gem 'unf'
 
 group :development do
   gem 'sqlite3'

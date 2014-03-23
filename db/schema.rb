@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130107010733) do
+ActiveRecord::Schema.define(version: 20140322204308) do
 
   create_table "orders", id: false, force: true do |t|
     t.string   "token"
@@ -44,6 +44,18 @@ ActiveRecord::Schema.define(version: 20130107010733) do
     t.string   "shipping_desc"
     t.string   "delivery_desc"
     t.integer  "limit"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "projects", force: true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.float    "total_fund_ask"
+    t.string   "founders"
+    t.float    "equity_offered"
+    t.float    "total_raised"
+    t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

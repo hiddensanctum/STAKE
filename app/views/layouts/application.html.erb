@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <title><%= Settings.product_name %></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= content_for?(:title) ? yield(:title) : "STAKE" %></title>
+
     <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
   </head>
-  <!--[if lt IE 9 ]><body class="lt-ie9"><![endif]-->
-  <!--[if (gt IE 9)|!(IE)]><!--> <body><!--<![endif]-->
-    <%= render 'preorder/header' %>
+
+  <body>
+
     <%= yield %>
-    <%= render 'preorder/footer' %>
+    <%= javascript_include_tag "application" %>
   </body>
 </html>
