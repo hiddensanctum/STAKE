@@ -2,35 +2,19 @@
   <ul class="title-area">
     <li id="headerTitle" class="name">
       <h1>
-        <%= image_tag("logo-small.png", alt: "StakeFunding") %>
+        <a href="/projects"><%= image_tag("logo-small.png", alt: "StakeFunding") %><a>
       </h1>
     </li>
   </ul>
 
-  <section class="top-bar-section">
+  <section class="nav show-page right">
     <!-- Right Nav Section -->
-    <ul class="right">
-      <li class="active">
-        <a href="#">Sign In</a>
-      </li>
-      <!-- <li class="has-dropdown">
-        <a href="#">Right Button Dropdown</a>
-        <ul class="dropdown">
-          <li>
-            <a href="#">First link in dropdown</a>
-          </li>
-        </ul>
-      </li>-->
-    </ul>
-
-    <!-- Left Nav Section -->
-    <ul class="left">
-      <li class="name">
-        <a href="#">Menu</a>
-      </li>
-      <li class="name">
-        <a href="#">Extra</a>
-      </li>
+    <ul class="inline-list show-page">
+      <li><a href="#" class="button nav-button">About</a></li>
+      <li><a href="#" class="button nav-button">Startups</a></li>
+      <li><a href="#" class="button nav-button">Investors</a></li>
+      <li><a href="#" class="button nav-button">Log In</a></li>
+      <li><a href="#" class="button nav-button active">Sign Up</a></li>
     </ul>
   </section>
 </nav>
@@ -65,27 +49,43 @@
   <div class="tabs-content">
     <div class="content active" id="panel2-1">
       <p><%= @project.description %></p>
+      <h2>About Us</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.
+      </p>
+      <h2>About Our Product</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.
+      </p>
+      <h2>Business Summary</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.
+      </p>
+      <h2>Goal</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.
+      </p>
     </div>
     <div class="content" id="panel2-2">
       <div class="panel">
         <img src="http://placehold.it/100x100" class="img-circle right">
         <h4>Derik:</h4>
-        <p>Don't have it</p>
+        <p>Ad Revenue and possibly in app payment</p>
       </div>
       <div class="panel">
         <img src="http://placehold.it/100x100" class="img-circle right">
-        <h4>Jason:</h4>
-        <p>WHERE IS MY MONEY</p>
+        <h4>Potential Investor 2:</h4>
+        <p>What type of revenue model are you going for?</p>
       </div>
       <div class="panel">
         <img src="http://placehold.it/100x100" class="img-circle right">
         <h4>Derik:</h4>
-        <p>Don't have it</p>
+        <p>People like to customize their apps. It is nice to be able to change the icon for Flappy Bird</p>
       </div>
       <div class="panel">
         <img src="http://placehold.it/100x100" class="img-circle right">
-        <h4>Jason:</h4>
-        <p>I KNOW YOU HAVE MY MONEY</p>
+        <h4>Potential Investor 1:</h4>
+        <p>Why should people choose your company?</p>
       </div>
       <form>
         <textarea placeholder="Comment"></textarea>
