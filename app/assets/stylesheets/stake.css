@@ -150,6 +150,9 @@ body {
   top: 0;
   bottom: 0;
 }
+.title-area {
+
+}
 footer {
   /*position: absolute;*/
   background-color: #2B2540;
