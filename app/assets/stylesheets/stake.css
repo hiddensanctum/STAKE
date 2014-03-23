@@ -1,0 +1,47 @@
+body {
+  background-color: #f1f1f1;
+}
+.project-header {
+  padding: 0 0 30px 0;
+  margin-bottom: 30px;
+  border-width: 100%;
+  border-bottom: 1px solid #2B2540;
+}
+.project-info {
+  padding-left: 40px;
+}
+.button.purple{
+  padding: 15px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #2B2540;
+}
+.progress.purple .meter {
+  background: #2B2540;
+}
+.progress.purple {
+  border-color: #2B2540;
+}
+.img-circle {
+  border-radius: 50%;
+}
+.project-container {
+  overflow: hidden;
+}
+.row {
+  margin-bottom: 20px;
+}
+.tabs dd.active a {
+  background-color: #2B2540;
+  color: #fff;
+}
+.panel {
+  overflow: hidden;
+}
+.tabs-content {
+  border-top: 5px solid #2B2540;
+  padding: 10px;
+}
+.large {
+  font-size: 1.5em;
+}

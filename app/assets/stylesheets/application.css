@@ -10,8 +10,7 @@
  *
  *= require_self
  *= require foundation_and_overrides
-
-
+ *= require stake
  *= require jquery.ui.all
  */
 .hidden

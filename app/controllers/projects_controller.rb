@@ -15,10 +15,28 @@ class ProjectsController < ApplicationController
 	        format.json { render json: @project.errors, status: :unprocessable_entity }
 	      end
 	    end
-	end	
-  
+	end
+
 	def show
 		@project = Project.find(params[:id])
+	end
+
+	def edit
+		@project = Project.find(params[:id])
+	end
+
+	def update
+		@project = Project.find(params[:id])
+
+    	respond_to do |format|
+	      if @project.update_attributes(project_params)
+	        format.html { redirect_to @project, notice: 'project was successfully created.' }
+	        format.json { render action: 'show', status: :created, location: @project }
+	      else
+	        format.html { render action: 'new' }
+	        format.json { render json: @project.errors, status: :unprocessable_entity }
+	      end
+	    end
 	end
 
 	def new
@@ -27,7 +45,7 @@ class ProjectsController < ApplicationController
 
 	def destroy
 	end
-	
+
 	private
 
 	def project_params
