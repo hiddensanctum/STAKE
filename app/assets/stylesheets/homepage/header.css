@@ -12,4 +12,6 @@
 }
 .top-bar .title-area {
  float: right;
+ padding-top: 1%;
+ padding-right: 2%;
 }
