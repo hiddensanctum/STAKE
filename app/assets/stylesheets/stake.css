@@ -72,6 +72,10 @@ body {
   right: 0;
 }
 .carousel-header h1 {
+  font-size: 4em;
+  color: #fff;
+}
+.carousel-header h2 {
   font-size: 3em;
   color: #FFD28E;
 }
@@ -86,6 +90,7 @@ body {
   height: 700px;
 }
 .learn-button {
+  margin-top: 20px;
   border-radius: 10px;
   border: 1px solid #fff;
   font-size: 1.5em;
